@@ -13,7 +13,7 @@ export default function FrontLayout({
 }>) {
   return (
     <section>
-      <div className="px-4 max-w-7xl mx-auto">
+      <div className="p-4 max-w-7xl mx-auto">
         <MantineHeader />
       </div>
       {children}

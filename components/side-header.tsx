@@ -36,6 +36,7 @@ import {
 import Link from 'next/link'
 import * as React from 'react'
 import Logo from './logo'
+import CollapsibleBanner from './front/colabsable-banner'
 
 const features = [
   {
@@ -130,6 +131,7 @@ export default function MantineHeader() {
 
   return (
     <div className=" ">
+      <CollapsibleBanner />
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container max-w-6xl mx-auto flex h-14 items-center justify-between">
           <div className="flex items-center space-x-4">
