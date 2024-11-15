@@ -1,3 +1,4 @@
+import DashboardPreview from '@/components/front/dashboard-preview'
 import Hero from '@/components/front/hero'
 import LogoCloud from '@/components/front/logo-cloud'
 
@@ -7,6 +8,7 @@ export default function Home() {
       <Hero />
 
       <LogoCloud />
+      <DashboardPreview />
     </div>
   )
 }
