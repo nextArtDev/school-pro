@@ -1,3 +1,4 @@
+import Footer from '@/components/front/footer'
 import MantineHeader from '@/components/side-header'
 import type { Metadata } from 'next'
 
@@ -17,6 +18,7 @@ export default function FrontLayout({
         <MantineHeader />
       </div>
       {children}
+      <Footer />
     </section>
   )
 }
