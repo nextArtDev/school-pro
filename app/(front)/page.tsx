@@ -2,6 +2,7 @@ import DashboardPreview from '@/components/front/dashboard-preview'
 import FeaturedGrid from '@/components/front/features-grid'
 import Hero from '@/components/front/hero'
 import LogoCloud from '@/components/front/logo-cloud'
+import Pricing from '@/components/front/pricing'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <LogoCloud />
       <DashboardPreview />
       <FeaturedGrid />
+      <Pricing />
     </div>
   )
 }
