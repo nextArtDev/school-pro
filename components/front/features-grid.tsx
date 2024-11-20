@@ -17,7 +17,7 @@ import Link from 'next/link'
 import React from 'react'
 import featuredImage from '@/public/dashboard-preview.jpg'
 
-const features = [
+export const features = [
   {
     icon: Users,
     title: 'Student Management',
