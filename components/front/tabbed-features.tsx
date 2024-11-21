@@ -87,6 +87,11 @@ const features = [
 function TabbedFeatures() {
   return (
     <div className="container mx-auto px-4 py-16">
+      <div className="hidden py-8 sm:mb-8 sm:flex sm:justify-center">
+        <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+          ✨Additional Features{' '}
+        </div>
+      </div>
       <Tabs defaultValue={features[0].title} className="space-y-8  mx-auto">
         <TabsList className="inline-flex h-auto w-full justify-start gap-4 rounded-none border-b bg-transparent p-0 ">
           {features.map((feature) => {
