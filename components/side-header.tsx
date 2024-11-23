@@ -1,6 +1,6 @@
 'use client'
-
-import { Button } from '@/components/ui/button'
+//2- 1:35:05
+import { Button, buttonVariants } from '@/components/ui/button'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -223,8 +223,20 @@ export default function MantineHeader() {
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost">Log in</Button>
-            <Button>Sign up</Button>
+            <Link
+              href={'/login'}
+              className={cn('w-full', buttonVariants({ variant: 'ghost' }))}
+              onClick={() => setOpen(false)}
+            >
+              Log in
+            </Link>
+            <Link
+              href={'/register'}
+              className={cn('w-full', buttonVariants())}
+              onClick={() => setOpen(false)}
+            >
+              Sign up
+            </Link>
           </div>
 
           <Sheet open={open} onOpenChange={setOpen}>
@@ -298,16 +310,23 @@ export default function MantineHeader() {
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-4 border-t bg-background">
                 <div className="grid gap-2">
-                  <Button
-                    variant="outline"
-                    className="w-full"
+                  <Link
+                    href={'/login'}
+                    className={cn(
+                      'w-full',
+                      buttonVariants({ variant: 'outline' })
+                    )}
                     onClick={() => setOpen(false)}
                   >
                     Log in
-                  </Button>
-                  <Button className="w-full" onClick={() => setOpen(false)}>
+                  </Link>
+                  <Link
+                    href={'/register'}
+                    className={cn('w-full', buttonVariants())}
+                    onClick={() => setOpen(false)}
+                  >
                     Sign up
-                  </Button>
+                  </Link>
                 </div>
               </div>
             </SheetContent>
